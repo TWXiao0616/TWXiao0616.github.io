@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     margin: 0;
     padding: 0;
@@ -51,9 +49,11 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
+
 #banner h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
 }
 
 #banner p {
@@ -126,6 +126,15 @@ section h2 {
     display: inline-block;
 }
 
+.artwork {
+    transform: scale(0); /* 初始状态：缩小 */
+    transition: transform 1s ease; /* 添加过渡效果 */
+}
+
+.artwork[data-animate="true"] {
+    transform: scale(1) rotate(360deg); /* 触发动画后的状态：放大并旋转 */
+}
+
 .fancy-list {
     list-style-type: none;
     padding-left: 0;
@@ -147,4 +156,9 @@ section h2 {
 
 .footer-space {
     height: 100px;
+}
+
+header, nav {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
