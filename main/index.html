@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪畫委託網站</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('image/background.jpg');
+            background-size: contain; 
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #banner {
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        #banner h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        #banner h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #banner p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            color: white;
+        }
+        
+        #banner h2,
+        #banner p {
+            color: black;
+        }
+
+        section h2 {
+            color: black;
+            padding: 10px;
+            text-align: left;
+            display: inline-block;
+            border-bottom: 2px solid black;
+        }
+
+        #portfolio h2,
+        #commission h2,
+        #about h2,
+        #contact h2 {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            text-align: left;
+            display: inline-block;
+            border-bottom: 2px solid black;
+        }
+
+        .artwork img {
+            max-width: 100%;
+            height: auto;
+            width: 200px;
+        }
+
+        .artwork .label {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            margin-top: -20px;
+            display: inline-block;
+        }
+
+        .fancy-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .fancy-list li:before {
+            content: "\2022";
+            color: #3337ff; 
+            font-size: 1.5em; 
+            padding-right: 5px;
+        }
+
+        .fancy-list li {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 20px;
+            color: #3337ff; 
+            text-shadow: 2px 2px 2px #ccc;
+        }
+
+        .footer-space {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>繪畫委託</h1>
+            <nav>
+                <ul>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#commission">委託流程</a></li>
+                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="#contact">聯繫我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container">
+            <h2>歡迎來到我們的繪畫委託網站</h2>
+            <p>我們提供優質的繪畫服務，讓您的想像變成現實。</p>
+            <a href="https://www.instagram.com/yin_commission/" class="btn" target="_blank">了解更多</a>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>作品集</h2>
+            <div class="gallery">
+                <div class="artwork">
+                    <img src="image/IMG_20240416_000016_849.jpg" alt="作品1">
+                    <p class="label">光遇,巫師</p>
+                </div>
+                <div class="artwork">
+                    <img src="image/IMG_20240416_000020_559.jpg" alt="作品1">
+                    <p class="label">特殊主題</p>
+                </div>
+                <div class="artwork">
+                    <img src="image/IMG_20240416_000025_852.jpg" alt="作品1">
+                    <p class="label">有色輪廓圖</p>
+                </div>
+                <div class="artwork">
+                    <img src="image/IMG_20240416_000028_889.jpg" alt="作品1">
+                    <p class="label">黑框男性</p>
+                </div>
+                <div class="artwork">
+                    <img src="image/IMG_20240416_000032_423.jpg" alt="作品1">
+                    <p class="label">有色輪廓圖,多主角</p>
+                </div>
+                <div class="artwork">
+                    <img src="image/IMG_20240416_000039_289.jpg" alt="作品1">
+                    <p class="label">可愛畫風</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="commission">
+        <div class="container">
+            <h2>委託流程</h2>
+            <ol class="fancy-list">
+                <li>聯繫我們</li>
+                <li>討論需求、細節和預算</li>
+                <li>確認委託內容和價格</li>
+                <li>支付訂金</li>
+                <li>開始創作</li>
+                <li>確認最終成品</li>
+                <li>支付尾款</li>
+                <li>完成委託</li>
+            </ol>
+        </div>
+    </section>
+    
+
+    <section id="about">
+        <div class="container">
+            <h2>關於我們</h2>
+            <p>作為一個獨立藝術家，我致力於為每位客戶創造出獨一無二的藝術品。我以顧客至上的態度對待每一個項目，並將我的創意和熱情融入到每一幅作品中。無論您的需求是什麼，我都會努力確保您滿意並享受到與我合作的愉快體驗。我的目標是通過我的作品為您帶來驚喜和喜悅，並讓您的想像力在我的畫布上得到完美的表達。</p>
+        </div>
+    </section>
+
+    <section id="contact">
+    <div class="container">
+        <h2>聯繫我們</h2>
+        <p>您可以通過以下方式與我們聯繫：</p>
+        <ul>
+            <li>Instagram: <a href="https://www.instagram.com/yinnn._.1211/" target="_blank">@yinnn._.1211</a></li>
+            <li>Line: @703tdisa</li>
+        </ul>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>版權所有 &copy; @yinnn._.1211 繪畫委託網站</p>
+        </div>
+    </footer>
+
+    <div class="footer-space"></div>
+</body>
+</html>
