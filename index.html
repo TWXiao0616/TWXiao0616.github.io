@@ -1,110 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YIN繪畫委託</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>專案合作招募</title>
+    <style>
+        body {
+            font-family: 'Microsoft JhengHei', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        section {
+            width: 80%;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #34495e;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            font-size: 1.2rem;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2c3e50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>繪畫委託</h1>
-            <nav>
-                <ul>
-                    <li><a href="#portfolio">作品集</a></li>
-                    <li><a href="#commission">委託流程</a></li>
-                    <li><a href="#about">關於我們</a></li>
-                    <li><a href="#contact">聯繫我們</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>專案合作招募</h1>
     </header>
-    
-    <section id="banner">
-        <div class="container">
-            <h2>歡迎來到我們的繪畫委託網站</h2>
-            <p>我們提供優質的繪畫服務，讓您的想像變成現實。</p>
-            <a href="https://www.instagram.com/yin_commission/" class="btn" target="_blank">了解更多</a>
-        </div>
-    </section>
-    
-    <section id="portfolio">
-        <div class="container">
-            <h2>作品集</h2>
-            <div class="gallery">
-                <div class="artwork" data-animate="false">
-                    <img src="image/IMG_20240416_000016_849.jpg" alt="作品1"> <br />
-                    <p class="label">光遇,巫師</p>
-                </div>
-                <div class="artwork" data-animate="false">
-                    <img src="image/IMG_20240416_000020_559.jpg" alt="作品1"> <br />
-                    <p class="label">特殊主題</p>
-                </div>
-                <div class="artwork" data-animate="false">
-                    <img src="image/IMG_20240416_000025_852.jpg" alt="作品1"> <br />
-                    <p class="label">有色輪廓圖</p>
-                </div>
-                <div class="artwork" data-animate="false">
-                    <img src="image/IMG_20240416_000028_889.jpg" alt="作品1"> <br />
-                    <p class="label">黑框男性</p>
-                </div>
-                <div class="artwork" data-animate="false">
-                    <img src="image/IMG_20240416_000032_423.jpg" alt="作品1"> <br />
-                    <p class="label">有色輪廓圖,多主角</p>
-                </div>
-                <div class="artwork" data-animate="false">
-                    <img src="image/IMG_20240416_000039_289.jpg" alt="作品1"> <br />
-                    <p class="label">可愛畫風</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="commission">
-        <div class="container">
-            <h2>委託流程</h2>
-            <ol class="fancy-list">
-                <li>聯繫我們</li>
-                <li>討論需求、細節和預算</li>
-                <li>確認委託內容和價格</li>
-                <li>支付訂金</li>
-                <li>開始創作</li>
-                <li>確認最終成品</li>
-                <li>支付尾款</li>
-                <li>完成委託</li>
-            </ol>
-        </div>
-    </section>
-    
-    
-    <section id="about">
-        <div class="container">
-            <h2>關於我們</h2>
-            <p>作為一個獨立藝術家，我致力於為每位客戶創造出獨一無二的藝術品。我以顧客至上的態度對待每一個項目，並將我的創意和熱情融入到每一幅作品中。無論您的需求是什麼，我都會努力確保您滿意並享受到與我合作的愉快體驗。我的目標是通過我的作品為您帶來驚喜和喜悅，並讓您的想像力在我的畫布上得到完美的表達。</p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <div class="container">
-            <h2>聯繫我們</h2>
-            <p>您可以通過以下方式與我們聯繫：</p>
-            <ul>
-                <li>Instagram: <a href="https://www.instagram.com/yinnn._.1211/" target="_blank">@yinnn._.1211</a></li>
-                <li>Line: <a href="https://lin.ee/TouGsnQ" target="_blank">@703tdisa</a></li>
-            </ul>
-        </div>
+
+    <section>
+        <h2>關於我們</h2>
+        <p>
+            這個工作室是為了一個特定的專案而成立。我們的目標是設計一款具有創新理念的手機App，讓國中生與高中生能夠在去中心化的結構中自由交流，並且根據學校年齡段進行分區。這是一次挑戰與機會並存的合作旅程，我們需要夥伴共同完成這個專案！
+        </p>
+
+        <h2>我們正在尋找誰？</h2>
+        <p>
+            - 你是否對C#開發有熱情？<br>
+            - 你是否對設計去中心化的訊息平台感興趣？<br>
+            - 你是否願意投入時間和心力，與我們一起完成這個專案？
+        </p>
+        <p>
+            如果你的答案是肯定的，這個工作室正是你需要加入的團隊！
+        </p>
+
+        <h2>條件</h2>
+        <ul>
+            <li>希望找到願意一同合作完成此專案的夥伴。</li>
+            <li>一天至少能夠投入 <strong>一小時以上</strong> 的時間，進行開發或協作。</li>
+        </ul>
+
+        <h2>注意事項</h2>
+        <ul>
+            <li>此工作室是為了這個專案而設立，專案完成後，工作室不一定會持續運作。</li>
+            <li>工作室 <strong>不營利</strong>，因此我們無法提供任何薪資或報酬。</li>
+            <li>我們尋找的不是「員工」，而是共同努力的「夥伴」。</li>
+        </ul>
+
+        <h2>聯絡方式</h2>
+        <p class="contact">如果你有興趣參與這個挑戰，請聯絡我們：<br>
+            <strong>Email</strong>: <a href="mailto:xiaoplaygame0616@gmail.com">xiaoplaygame0616@gmail.com</a>
+        </p>
     </section>
 
     <footer>
-        <div class="container">
-            <p>版權所有 &copy; @yinnn._.1211 繪畫委託網站</p>
-        </div>
+        <p>© 2024 專案合作工作室</p>
     </footer>
-    
-    <div class="footer-space"></div>
-
-    <script src="animation.js"></script>
-    ,<script src="color.js"></script>
 </body>
 </html>
